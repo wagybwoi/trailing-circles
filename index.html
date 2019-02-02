@@ -1,0 +1,47 @@
+<style>
+    html, body {
+        margin: 0;
+        background: #F1EAD1;
+        cursor: pointer;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        opacity: 0;
+        text-align: center;
+        transition: 1s;
+        user-select: none;
+    }
+
+    .visible {
+        transition: 0.2s;
+        opacity: 1;
+    }
+
+    #lineCountText {
+        position: fixed;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        line-height: 0;
+        top: 50%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        color: white;
+        font-size: 40vmin;
+    }
+
+    #defaultCanvas0 {
+        position: fixed
+    }
+</style>
+
+<body>
+    <canvas id="trailCanvas"></canvas>
+    <div id="overlayBar" class="overlay"><span id="lineCountText"></span></div>
+    <script src="p5.min.js"></script>
+    <script src="index.js"></script>
+</body>
